@@ -29,5 +29,12 @@ namespace OsmosGame {
         }
         public virtual void Draw() { }
         public virtual void Update() { }
+
+        public void Destroy() {
+            Program.objects.Remove(this);
+            if (this is ICollider c) {
+                c.ColliderEnable(false);
+            }
+        }
     }
 }

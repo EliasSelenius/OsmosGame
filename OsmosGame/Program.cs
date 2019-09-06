@@ -56,10 +56,10 @@ namespace OsmosGame {
             objects.Add(new Camera());
             Camera.MainCamera.Target = p;
 
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 40; i++) {
                 var s = new Sphere();
-                s.position.X = (float)(random.NextDouble() * 10f) - 5f;
-                s.position.Y = (float)(random.NextDouble() * 10f) - 5f;
+                s.position.X = (float)(random.NextDouble() * 30f) - 15f;
+                s.position.Y = (float)(random.NextDouble() * 30f) - 15f;
                 objects.Add(s);
             }
         }

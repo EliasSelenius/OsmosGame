@@ -82,13 +82,9 @@ namespace OsmosGame {
             scale = Vector2.One * Radius;
 
             if (Mass < 10) {
-                Die();
+                Destroy();
             }
 
-        }
-
-        public virtual void Die() {
-            Program.objects.Remove(this);
         }
 
     }
